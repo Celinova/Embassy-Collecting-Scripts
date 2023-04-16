@@ -40,9 +40,8 @@ def open_region_links(regions, batch_size, processed_regions_file):
         input()
 
 if __name__ == "__main__":
-    app_name = input("Enter your app name: ")
-    contact_email = input("Enter your contact email: ")
-    headers = {"User-Agent": f"{app_name}/{contact_email}"}
+    ns_name = input("Enter your NationStates nation (please use underscores if there are spaces): ")
+    headers = {"User-Agent": f"{ns_name}/Link Opener for NS embassy collecting (https://github.com/Celinova/Embassy-Collecting-Scripts/edit/main/Embassy%20Link%20Opener/embassies.py)"}
 
     regions = get_all_regions(headers)
     batch_size = int(input("Enter the number of regions to process at a time: "))
