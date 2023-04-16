@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "NationStates Embassy Request Extension",
+  "version": "1.0.0",
+  "description": "Helps send embassy requests to regions you haven't sent requests to before.",
+  "permissions": ["https://www.nationstates.net/*", "activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.nationstates.net/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
